@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CORE//LAB — PC Parts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header>
+  <a class="logo" href="#"><span>CORE</span><b>//</b>LAB</a>
+  <nav>
+    <a href="#shop">Components</a><a href="#build">Build Your PC</a><a href="#deals">Deals</a><a href="#about">Why Core</a>
+  </nav>
+  <div class="head-actions"><button class="search">⌕</button><button class="cart">Cart <span id="cartCount">0</span></button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="tag"><span></span> PERFORMANCE WITHOUT COMPROMISE</div>
+    <h1>BUILD<br><em>YOUR</em><br>BEAST.</h1>
+    <p>Premium PC components for gaming, creation and everything that demands more.</p>
+    <div class="hero-buttons"><a class="btn primary" href="#shop">Shop components ↘</a><a class="btn ghost" href="#build">Build your PC</a></div>
+    <div class="hero-stats"><div><b>2,400+</b><span>PARTS IN STOCK</span></div><div><b>24H</b><span>FAST DISPATCH</span></div><div><b>3YR</b><span>WARRANTY</span></div></div>
+  </div>
+  <div class="hero-machine">
+    <div class="orbit orbit1"></div><div class="orbit orbit2"></div>
+    <div class="gpu">
+      <div class="gpu-side"><small>CORE//LAB</small><strong>RTX<br>5070</strong><div class="fans"><i></i><i></i><i></i></div></div>
+      <div class="gpu-top"></div><div class="gpu-light"></div>
+    </div>
+    <div class="spec-chip">NVIDIA<br><b>BLACK SERIES</b></div>
+  </div>
+</section>
+
+<div class="ticker"><span>CPU</span> / <span>GPU</span> / <span>RAM</span> / <span>SSD</span> / <span>MOTHERBOARD</span> / <span>COOLING</span> / <span>PSU</span> / <span>CASE</span> / <span>CPU</span> / <span>GPU</span> /</div>
+
+<section class="section" id="shop">
+  <div class="section-title"><div><small>01 / SHOP</small><h2>Pick your<br><em>weapon.</em></h2></div><a href="#" class="viewall">View all parts ↗</a></div>
+  <div class="categories">
+    <a href="#" class="cat cat-gpu"><span>01</span><b>GRAPHICS<br>CARDS</b><small>RTX / RX / ARC</small><strong>→</strong></a>
+    <a href="#" class="cat cat-cpu"><span>02</span><b>PROCESSORS</b><small>AMD / INTEL</small><strong>→</strong></a>
+    <a href="#" class="cat cat-ram"><span>03</span><b>MEMORY</b><small>DDR5 / DDR4</small><strong>→</strong></a>
+    <a href="#" class="cat cat-ssd"><span>04</span><b>STORAGE</b><small>NVMe / SATA</small><strong>→</strong></a>
+  </div>
+</section>
+
+<section class="products section" id="deals">
+  <div class="section-title"><div><small>02 / HOT RIGHT NOW</small><h2>Top<br><em>components.</em></h2></div><div class="deal">LIVE PRICES <i></i></div></div>
+  <div class="product-grid">
+    <article class="product">
+      <div class="product-img gpu-img"><label>HOT</label><div class="fake-gpu"><b>RTX</b><strong>5070</strong><span>12GB</span></div></div>
+      <div class="product-meta"><small>GRAPHICS CARD</small><h3>RTX 5070 12GB</h3><p>Next-gen performance for high-FPS gaming.</p><div class="buy"><b>EGP 56,200</b><button onclick="addCart()">Add to cart +</button></div></div>
+    </article>
+    <article class="product">
+      <div class="product-img cpu-img"><label>BEST VALUE</label><div class="fake-cpu"><span>RYZEN</span><b>7</b><strong>9700X</strong></div></div>
+      <div class="product-meta"><small>PROCESSOR</small><h3>Ryzen 7 9700X</h3><p>8 cores. Serious speed. Built for AM5.</p><div class="buy"><b>EGP 19,900</b><button onclick="addCart()">Add to cart +</button></div></div>
+    </article>
+    <article class="product">
+      <div class="product-img ram-img"><label>NEW</label><div class="fake-ram"><i></i><i></i><i></i><i></i></div></div>
+      <div class="product-meta"><small>MEMORY</small><h3>32GB DDR5 6000</h3><p>Low latency performance for demanding builds.</p><div class="buy"><b>EGP 7,800</b><button onclick="addCart()">Add to cart +</button></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="builder" id="build">
+  <div class="builder-copy">
+    <small>03 / THE EASY WAY</small>
+    <h2>DON'T KNOW<br>WHAT TO<br><em>BUILD?</em></h2>
+    <p>Tell us your budget and what you want to do. We'll match the parts and make sure everything works together.</p>
+    <a class="btn primary" href="#">Start the builder ↗</a>
+  </div>
+  <div class="builder-panel">
+    <div class="panel-top"><span>CORE//BUILDER</span><i>● ONLINE</i></div>
+    <div class="build-row"><span>USE CASE</span><b>GAMING <small>⌄</small></b></div>
+    <div class="build-row"><span>BUDGET</span><b>EGP 75,000 <small>⌄</small></b></div>
+    <div class="build-row"><span>RESOLUTION</span><b>1440P <small>⌄</small></b></div>
+    <div class="build-result"><span>EST. PERFORMANCE</span><strong>HIGH</strong><div class="meter"><i></i></div></div>
+    <button>GENERATE BUILD →</button>
+  </div>
+</section>
+
+<section class="why section" id="about">
+  <div class="section-title"><div><small>04 / WHY CORE</small><h2>Built for<br><em>builders.</em></h2></div></div>
+  <div class="why-grid">
+    <div><b>01</b><h3>COMPATIBILITY<br>CHECKED</h3><p>Every recommended combination is checked for socket, power, clearance and generation compatibility.</p></div>
+    <div><b>02</b><h3>REAL<br>PERFORMANCE</h3><p>No vague marketing. We show you what the hardware is actually designed to handle.</p></div>
+    <div><b>03</b><h3>HUMAN<br>SUPPORT</h3><p>Talk to someone who knows the difference between a chipset and a graphics card.</p></div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div><small>GET THE DROP</small><h2>NEW PARTS.<br>BETTER BUILDS.</h2></div>
+  <form onsubmit="event.preventDefault();this.querySelector('button').textContent='YOU’RE IN ✓'"><input type="email" placeholder="Your email address" required><button>Join the list →</button></form>
+</section>
+</main>
+
+<footer><a class="logo" href="#"><span>CORE</span><b>//</b>LAB</a><p>PC PARTS / BUILDS / PERFORMANCE</p><div><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Contact</a></div></footer>
+<div class="toast" id="toast">Added to cart ✓</div>
+<script src="script.js"></script>
+</body>
+</html>
